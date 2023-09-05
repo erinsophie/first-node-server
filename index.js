@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
           res.end(content);
         });
       } else {
-        // sever error
+        // server error
         res.writeHead(500);
         res.end(`Server error: ${err.code}`);
       }
